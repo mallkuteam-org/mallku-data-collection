@@ -2,10 +2,11 @@ import api_requests as req
 
 
 def main():
-    # json_result = req.request_breeds_by_name("pers", True)
-    req.post_my_vote(image_id="8rm", sub_id="api-facu", value=3)
-    json_votes = req.request_my_votes(sub_id="api-facu")
-    print(json_votes)
+
+    user_name = "user"
+    user_password = "pass"
+    response = req.make_query(username=user_name, password=user_password)
+    print(response.content)
 
 
 if __name__ == '__main__':

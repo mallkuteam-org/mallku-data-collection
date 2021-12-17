@@ -1,9 +1,8 @@
-# import numpy as np
+from copernicus_requests import get_links
 
 
 def main():
-    # print(np.mean([5, 3, 8]))
-    print("Hello Mallku Team")
+    get_links()
 
 
 if __name__ == '__main__':

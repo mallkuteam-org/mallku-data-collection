@@ -1,4 +1,5 @@
 import requests
+import itertools
 import pandas as pd
 from domain.User import User
 from domain.Filter import Filter
@@ -21,10 +22,11 @@ def get_links():
             query,
             auth=requests.auth.HTTPBasicAuth(auth['user'], auth['password']))
         xml_string = response.text
+        users_iter = itertools.cycle(users)
 
         results = get_processed_xml(xml_string)
-        for result in results:
-            add_row_csv(result)
+        for result,user in zip(results,users_iter):
+            add_row_csv(result,user)
 
 
 def build_query(filter):
@@ -90,9 +92,9 @@ def get_processed_xml(xml_string):
     return results
 
 
-def add_row_csv(result: Result):
+def add_row_csv(result: Result, user):
     with open(r'utils/links.csv', 'a', newline='') as csvfile:
-        fieldnames = ['link', 'title', 'ingestion_date', 'processing_level', 'size', 'uuid', 'is_downloaded']
+        fieldnames = ['link', 'title', 'ingestion_date', 'processing_level', 'size', 'uuid', 'is_downloaded','username','password']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerow({'link': result.link,
                          'title': result.title,
@@ -100,5 +102,7 @@ def add_row_csv(result: Result):
                          'processing_level': result.processing_level,
                          'size': result.size,
                          'uuid': result.uuid,
-                         'is_downloaded': result.is_downloaded
+                         'is_downloaded': result.is_downloaded,
+                         'username': user.username,
+                         'password': user.password
                          })

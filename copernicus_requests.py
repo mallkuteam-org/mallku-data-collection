@@ -86,6 +86,7 @@ def get_processed_xml(xml_string):
             if element.attrib == {'name': 'uuid'} and result.uuid is None:
                 print('uuid: ', element.text)
                 result.uuid = element.text
+            result.is_downloaded = False
         results.append(result)
     return results
 

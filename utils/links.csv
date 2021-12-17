@@ -1,1 +1,1 @@
-link,title,ingestion_date,processing_level,size,uuid
+link,title,ingestion_date,processing_level,size,uuid,is_downloaded,username,password

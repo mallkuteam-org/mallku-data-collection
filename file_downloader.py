@@ -28,6 +28,7 @@ def main():
     args = parser.parse_args()
 
     url = args.url
+
     user = args.user
     password = args.password
     output_filename = args.url.split('\'')[1]

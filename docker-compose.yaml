@@ -1,0 +1,8 @@
+services:
+  data-collection:
+    container_name: mallku-data-collection
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+

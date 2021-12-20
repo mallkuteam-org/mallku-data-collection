@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom">
+<title>Sentinels Scientific Data Hub search results for: *</title>
+<subtitle>Displaying 0 to 9 of 44398896 total results. Request done in 0 seconds.</subtitle>
+<updated>2021-11-26T17:58:48.528Z</updated>
+<author>
+<name>Sentinels Scientific Data Hub</name>
+</author>
+<id>https://scihub.copernicus.eu/dhus/search?q=*</id>
+<opensearch:totalResults>44398896</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+<opensearch:Query role="request" searchTerms="*" startPage="1"/>
+<link rel="self" type="application/xml" href="https://scihub.copernicus.eu/dhus/search?q=*&amp;start=0&amp;rows=10"/>
+<link rel="first" type="application/xml" href="https://scihub.copernicus.eu/dhus/search?q=*&amp;start=0&amp;rows=10"/>
+<link rel="next" type="application/xml" href="https://scihub.copernicus.eu/dhus/search?q=*&amp;start=10&amp;rows=10"/>
+<link rel="last" type="application/xml" href="https://scihub.copernicus.eu/dhus/search?q=*&amp;start=44398895&amp;rows=10"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_description.xml"/>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T30SXB_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6674d707-0b98-4b5e-a911-34f3b490eda7')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6674d707-0b98-4b5e-a911-34f3b490eda7')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('6674d707-0b98-4b5e-a911-34f3b490eda7')/Products('Quicklook')/$value"/>
+<id>6674d707-0b98-4b5e-a911-34f3b490eda7</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 722.01 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:55.515Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">165.560270097188</double>
+<double name="illuminationzenithangle">55.3007171678258</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">0.005172</double>
+<double name="waterpercentage">0.0</double>
+<double name="unclassifiedpercentage">3.5E-5</double>
+<double name="mediumprobacloudspercentage">6.107246</double>
+<double name="highprobacloudspercentage">93.039191</double>
+<double name="snowicepercentage">0.794617</double>
+<double name="cloudcoverpercentage">99.200176</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T30SXB_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;33.12026280465306,-0.7511902 33.01528393502153,-0.78341675 32.86826656448105,-0.82818604 32.72100072167403,-0.8725281 32.573707523267075,-0.91674805 32.43185119112142,-0.9590759 32.44463539463778,-1.9361572 33.43490918882366,-1.9242249 33.419046707493955,-0.7436218 33.12026280465306,-0.7511902&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-0.9590759 32.43185119112142, -0.91674805 32.573707523267075, -0.8725281 32.72100072167403, -0.82818604 32.86826656448105, -0.78341675 33.01528393502153, -0.7511902 33.12026280465306, -0.7436218 33.419046707493955, -1.9242249 33.43490918882366, -1.9361572 32.44463539463778, -0.9590759 32.43185119112142)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T30SXB_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">722.01 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T30SXB_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T30SXB_20211126T125946</str>
+<str name="uuid">6674d707-0b98-4b5e-a911-34f3b490eda7</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T30RTP_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('73e83e44-62f5-49ab-8fea-acd1548cf69f')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('73e83e44-62f5-49ab-8fea-acd1548cf69f')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('73e83e44-62f5-49ab-8fea-acd1548cf69f')/Products('Quicklook')/$value"/>
+<id>73e83e44-62f5-49ab-8fea-acd1548cf69f</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 786.65 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:38.924Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">159.849259458534</double>
+<double name="illuminationzenithangle">49.3177665162533</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">23.723596</double>
+<double name="waterpercentage">0.0</double>
+<double name="unclassifiedpercentage">1.168725</double>
+<double name="mediumprobacloudspercentage">20.86141</double>
+<double name="highprobacloudspercentage">41.199899</double>
+<double name="snowicepercentage">0.0</double>
+<double name="cloudcoverpercentage">75.107226</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T30RTP_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;25.239029378295747,-5.978119 25.347321598684683,-5.952057 25.495425167930133,-5.91626 25.643559204995448,-5.880615 25.791704010817448,-5.8447266 25.93985157987833,-5.8085938 26.088011461308085,-5.7723694 26.192942863147877,-5.746765 26.207323832821213,-4.9038696 25.216351118358443,-4.888153 25.198425816101338,-5.9770813 25.239029378295747,-5.978119&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-5.9770813 25.198425816101338, -4.888153 25.216351118358443, -4.9038696 26.207323832821213, -5.746765 26.192942863147877, -5.7723694 26.088011461308085, -5.8085938 25.93985157987833, -5.8447266 25.791704010817448, -5.880615 25.643559204995448, -5.91626 25.495425167930133, -5.952057 25.347321598684683, -5.978119 25.239029378295747, -5.9770813 25.198425816101338)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T30RTP_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">786.65 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T30RTP_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T30RTP_20211126T125946</str>
+<str name="uuid">73e83e44-62f5-49ab-8fea-acd1548cf69f</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T31SBA_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8ae03a71-35a9-45d2-b39f-9c57466ba148')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8ae03a71-35a9-45d2-b39f-9c57466ba148')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8ae03a71-35a9-45d2-b39f-9c57466ba148')/Products('Quicklook')/$value"/>
+<id>8ae03a71-35a9-45d2-b39f-9c57466ba148</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 452.24 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:36.137Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">167.571386737917</double>
+<double name="illuminationzenithangle">58.5326958053905</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">1.01E-4</double>
+<double name="waterpercentage">2.606548</double>
+<double name="unclassifiedpercentage">6.0E-6</double>
+<double name="mediumprobacloudspercentage">36.357531</double>
+<double name="highprobacloudspercentage">59.751135000000005</double>
+<double name="snowicepercentage">0.061289</double>
+<double name="cloudcoverpercentage">97.331908</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T31SBA_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;37.01877853072241,0.494350886440067 36.9810997999352,0.481912059369041 36.83424046539026,0.433653747753201 36.68738601057839,0.385649642620884 36.63102435714048,0.367236982104712 36.54123953421952,0.337858218529318 36.394299446942426,0.28977236516433 36.24733565017686,0.241710355946534 36.10037769131904,0.193849583716872 36.021772602628936,0.168037742735641 36.01049725766069,-0.32870483 36.99866808026183,-0.37130737 37.01877853072241,0.494350886440067&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-0.32870483 36.01049725766069, -4.4482994016243650e-18 36.01795838653186, 0.168037742735641 36.021772602628936, 0.193849583716872 36.10037769131904, 0.241710355946534 36.24733565017686, 0.28977236516433 36.394299446942426, 0.337858218529318 36.54123953421952, 0.367236982104712 36.63102435714048, 0.385649642620884 36.68738601057839, 0.433653747753201 36.83424046539026, 0.481912059369041 36.9810997999352, 0.494350886440067 37.01877853072241, -2.2459685781148360e-18 37.007294069114224, -0.37130737 36.99866808026183, -0.32870483 36.01049725766069)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T31SBA_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">452.24 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T31SBA_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T31SBA_20211126T125946</str>
+<str name="uuid">8ae03a71-35a9-45d2-b39f-9c57466ba148</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T32VNM_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('edc8e509-81ca-4208-89b5-7710e3b13ee8')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('edc8e509-81ca-4208-89b5-7710e3b13ee8')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('edc8e509-81ca-4208-89b5-7710e3b13ee8')/Products('Quicklook')/$value"/>
+<id>edc8e509-81ca-4208-89b5-7710e3b13ee8</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 1.02 GB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:36.112Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">176.886627086621</double>
+<double name="illuminationzenithangle">81.006888653703</double>
+<double name="vegetationpercentage">0.594099</double>
+<double name="notvegetatedpercentage">0.378015</double>
+<double name="waterpercentage">5.804727</double>
+<double name="unclassifiedpercentage">15.94034</double>
+<double name="mediumprobacloudspercentage">21.113731</double>
+<double name="highprobacloudspercentage">27.669883</double>
+<double name="snowicepercentage">0.057156</double>
+<double name="cloudcoverpercentage">64.995326</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T32VNM_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;60.43645676802676,8.999636636826697 60.42153954009546,10.993793193188743 59.43618535955448,10.935513266830862 59.450525135662886,8.999647266385034 60.43645676802676,8.999636636826697&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((10.935513266830862 59.43618535955448, 10.993793193188743 60.42153954009546, 8.999636636826697 60.43645676802676, 8.999647266385034 59.450525135662886, 10.935513266830862 59.43618535955448)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T32VNM_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">1.02 GB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T32VNM_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T32VNM_20211126T125946</str>
+<str name="uuid">edc8e509-81ca-4208-89b5-7710e3b13ee8</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T31UDT_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('47c174de-a171-46da-9da7-77aab25696ed')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('47c174de-a171-46da-9da7-77aab25696ed')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('47c174de-a171-46da-9da7-77aab25696ed')/Products('Quicklook')/$value"/>
+<id>47c174de-a171-46da-9da7-77aab25696ed</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 529.86 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:25.034Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">169.956794705209</double>
+<double name="illuminationzenithangle">73.4355198208768</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">0.0</double>
+<double name="waterpercentage">0.559692</double>
+<double name="unclassifiedpercentage">0.0</double>
+<double name="mediumprobacloudspercentage">67.069709</double>
+<double name="highprobacloudspercentage">16.237551</double>
+<double name="snowicepercentage">12.957136</double>
+<double name="cloudcoverpercentage">86.483178</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T31UDT_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;51.356401200725465,1.919118886315947 51.4092293121171,1.940971491546811 51.55506348677192,2.00162654950065 51.70087381998465,2.062298845812378 51.84658818345692,2.123328239688266 51.992273767134805,2.184411056579052 52.1379823460352,2.245526525511304 52.28364720224638,2.306961767294597 52.345844849026975,2.333452104114513 52.350386283733314,3.143290766756212 51.36315784303349,3.140188798644377 51.356401200725465,1.919118886315947&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((1.919118886315947 51.356401200725465, 3.140188798644377 51.36315784303349, 3.143290766756212 52.350386283733314, 2.333452104114513 52.345844849026975, 2.306961767294597 52.28364720224638, 2.245526525511304 52.1379823460352, 2.184411056579052 51.992273767134805, 2.123328239688266 51.84658818345692, 2.062298845812378 51.70087381998465, 2.00162654950065 51.55506348677192, 1.940971491546811 51.4092293121171, 1.919118886315947 51.356401200725465)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T31UDT_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">529.86 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T31UDT_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T31UDT_20211126T125946</str>
+<str name="uuid">47c174de-a171-46da-9da7-77aab25696ed</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T30SXE_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('09a72068-a89a-4daa-ad71-24d622aed7bc')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('09a72068-a89a-4daa-ad71-24d622aed7bc')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('09a72068-a89a-4daa-ad71-24d622aed7bc')/Products('Quicklook')/$value"/>
+<id>09a72068-a89a-4daa-ad71-24d622aed7bc</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 811.30 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:57:00.204Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">165.859267724895</double>
+<double name="illuminationzenithangle">57.9476959676964</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">0.017601</double>
+<double name="waterpercentage">0.817744</double>
+<double name="unclassifiedpercentage">0.026387</double>
+<double name="mediumprobacloudspercentage">21.401668</double>
+<double name="highprobacloudspercentage">69.05725</double>
+<double name="snowicepercentage">6.929607999999999</double>
+<double name="cloudcoverpercentage">91.968952</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T30SXE_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;36.13974073092875,-1.8885193 36.122206728227304,-0.6687927 35.13300633202725,-0.6973572 35.14991603842797,-1.9021606 36.13974073092875,-1.8885193&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-0.6973572 35.13300633202725, -0.6687927 36.122206728227304, -1.8885193 36.13974073092875, -1.9021606 35.14991603842797, -0.6973572 35.13300633202725)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T30SXE_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">811.30 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T30SXE_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T30SXE_20211126T125946</str>
+<str name="uuid">09a72068-a89a-4daa-ad71-24d622aed7bc</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T30SYH_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8f98f94d-0753-4951-9606-6780fe4ec54a')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8f98f94d-0753-4951-9606-6780fe4ec54a')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('8f98f94d-0753-4951-9606-6780fe4ec54a')/Products('Quicklook')/$value"/>
+<id>8f98f94d-0753-4951-9606-6780fe4ec54a</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 879.30 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:56:59.477Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">167.307484554296</double>
+<double name="illuminationzenithangle">60.3675050066052</double>
+<double name="vegetationpercentage">11.235374</double>
+<double name="notvegetatedpercentage">11.770312</double>
+<double name="waterpercentage">60.62300199999999</double>
+<double name="unclassifiedpercentage">1.275447</double>
+<double name="mediumprobacloudspercentage">1.842257</double>
+<double name="highprobacloudspercentage">6.655804000000001</double>
+<double name="snowicepercentage">9.3E-5</double>
+<double name="cloudcoverpercentage">12.507503</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T30SYH_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;38.82628170870513,-0.6965332 38.79452724007538,0.566452796705863 37.80685703267152,0.518362240005832 37.83751218570364,-0.7276306 38.82628170870513,-0.6965332&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((0.518362240005832 37.80685703267152, 0.566452796705863 38.79452724007538, -3.8481765584946930e-18 38.80876920919471, -0.6965332 38.82628170870513, -0.7276306 37.83751218570364, 6.9814746691109890e-18 37.819610295196995, 0.518362240005832 37.80685703267152)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T30SYH_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">879.30 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T30SYH_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T30SYH_20211126T125946</str>
+<str name="uuid">8f98f94d-0753-4951-9606-6780fe4ec54a</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T31TCF_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('fd58a156-9f49-4daa-9584-5a97d3eebb12')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('fd58a156-9f49-4daa-9584-5a97d3eebb12')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('fd58a156-9f49-4daa-9584-5a97d3eebb12')/Products('Quicklook')/$value"/>
+<id>fd58a156-9f49-4daa-9584-5a97d3eebb12</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 937.15 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:56:58.449Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">168.824972446605</double>
+<double name="illuminationzenithangle">62.8504524145799</double>
+<double name="vegetationpercentage">18.67789</double>
+<double name="notvegetatedpercentage">9.258868</double>
+<double name="waterpercentage">49.695063</double>
+<double name="unclassifiedpercentage">4.915274</double>
+<double name="mediumprobacloudspercentage">1.995149</double>
+<double name="highprobacloudspercentage">10.025357</double>
+<double name="snowicepercentage">7.72E-4</double>
+<double name="cloudcoverpercentage">12.022803</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T31TCF_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;41.14293857995614,1.925072865550095 41.0823619307915,1.903014174987756 40.93602258986427,1.850659866186739 40.78966143273316,1.798562082696145 40.64333027346193,1.746423163560633 40.55457686460602,1.714825343395741 40.538607851727775,0.638419022640916 41.52685230149302,0.6028173807795 41.546758769895376,1.918508192616414 41.14293857995614,1.925072865550095&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((0.638419022640916 40.538607851727775, 1.714825343395741 40.55457686460602, 1.746423163560633 40.64333027346193, 1.798562082696145 40.78966143273316, 1.850659866186739 40.93602258986427, 1.903014174987756 41.0823619307915, 1.925072865550095 41.14293857995614, 1.918508192616414 41.546758769895376, 0.6028173807795 41.52685230149302, 0.638419022640916 40.538607851727775)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T31TCF_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">937.15 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T31TCF_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T31TCF_20211126T125946</str>
+<str name="uuid">fd58a156-9f49-4daa-9584-5a97d3eebb12</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T141429_N0301_R053_T25VCJ_20211126T163026</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('cf3fdb99-2b4b-4e35-8002-776f6044ba09')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('cf3fdb99-2b4b-4e35-8002-776f6044ba09')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('cf3fdb99-2b4b-4e35-8002-776f6044ba09')/Products('Quicklook')/$value"/>
+<id>cf3fdb99-2b4b-4e35-8002-776f6044ba09</id>
+<summary>Date: 2021-11-26T14:14:29.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 10.25 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T16:30:26Z</date>
+<date name="beginposition">2021-11-26T14:14:29.024Z</date>
+<date name="endposition">2021-11-26T14:14:29.024Z</date>
+<date name="ingestiondate">2021-11-26T17:56:53.845Z</date>
+<int name="orbitnumber">24675</int>
+<int name="relativeorbitnumber">53</int>
+<double name="illuminationazimuthangle">181.0812976477</double>
+<double name="illuminationzenithangle">82.7648094199409</double>
+<double name="vegetationpercentage">0.0</double>
+<double name="notvegetatedpercentage">0.0</double>
+<double name="waterpercentage">0.0</double>
+<double name="unclassifiedpercentage">0.0</double>
+<double name="mediumprobacloudspercentage">0.124314</double>
+<double name="highprobacloudspercentage">99.875689</double>
+<double name="snowicepercentage">0.0</double>
+<double name="cloudcoverpercentage">100.0</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS2_20211126T160919_A024675_T25VCJ_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;62.18147136431519,-36.694946 62.07079595729048,-36.79492 62.03701639077098,-36.825226 62.17850010690095,-36.84256 62.18147136431519,-36.694946&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-36.825226 62.03701639077098, -36.79492 62.07079595729048, -36.694946 62.18147136431519, -36.84256 62.17850010690095, -36.825226 62.03701639077098)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T141429_N0301_R053_T25VCJ_20211126T163026.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">10.25 MB</str>
+<str name="s2datatakeid">GS2B_20211126T141429_024675_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS2_20211126T163026_S20211126T141427_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS2_20211126T163026_A024675_T25VCJ_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T141429_N0301_R053_T25VCJ_20211126T163026</str>
+<str name="uuid">cf3fdb99-2b4b-4e35-8002-776f6044ba09</str>
+</entry>
+<entry>
+<title>S2B_MSIL2A_20211126T105309_N0301_R051_T30SWJ_20211126T125946</title>
+<link href="https://scihub.copernicus.eu/dhus/odata/v1/Products('e5b95197-2549-4601-ab5e-db7be7ed1ad5')/$value"/>
+<link rel="alternative" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('e5b95197-2549-4601-ab5e-db7be7ed1ad5')/"/>
+<link rel="icon" href="https://scihub.copernicus.eu/dhus/odata/v1/Products('e5b95197-2549-4601-ab5e-db7be7ed1ad5')/Products('Quicklook')/$value"/>
+<id>e5b95197-2549-4601-ab5e-db7be7ed1ad5</id>
+<summary>Date: 2021-11-26T10:53:09.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 523.61 MB</summary>
+<ondemand>false</ondemand>
+<date name="generationdate">2021-11-26T12:59:46Z</date>
+<date name="beginposition">2021-11-26T10:53:09.024Z</date>
+<date name="endposition">2021-11-26T10:53:09.024Z</date>
+<date name="ingestiondate">2021-11-26T17:56:50.08Z</date>
+<int name="orbitnumber">24673</int>
+<int name="relativeorbitnumber">51</int>
+<double name="illuminationazimuthangle">165.007615877744</double>
+<double name="illuminationzenithangle">61.7085337892065</double>
+<double name="vegetationpercentage">10.356922</double>
+<double name="notvegetatedpercentage">64.179331</double>
+<double name="waterpercentage">0.111392</double>
+<double name="unclassifiedpercentage">9.056047</double>
+<double name="mediumprobacloudspercentage">3.144541</double>
+<double name="highprobacloudspercentage">3.044239</double>
+<double name="snowicepercentage">1.49E-4</double>
+<double name="cloudcoverpercentage">7.979581999999999</double>
+<str name="level1cpdiidentifier">S2B_OPER_MSI_L1C_TL_VGS4_20211126T114831_A024673_T30SWJ_N03.01</str>
+<str name="gmlfootprint">&lt;gml:Polygon srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" xmlns:gml="http://www.opengis.net/gml"&gt;
+   &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+         &lt;gml:coordinates&gt;38.75767469726718,-2.4099426 38.796620256118125,-2.3986816 38.94406076129288,-2.3554993 39.0915455566927,-2.312561 39.23895964929771,-2.2693787 39.3861952638458,-2.225891 39.533393998618834,-2.1824036 39.68060511764902,-2.138855 39.74540734228168,-2.1194153 39.74319619212293,-1.7187195 38.754036048213806,-1.7366028 38.75767469726718,-2.4099426&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+   &lt;/gml:outerBoundaryIs&gt;
+&lt;/gml:Polygon&gt;</str>
+<str name="footprint">MULTIPOLYGON (((-1.7366028 38.754036048213806, -1.7187195 39.74319619212293, -2.1194153 39.74540734228168, -2.138855 39.68060511764902, -2.1824036 39.533393998618834, -2.225891 39.3861952638458, -2.2693787 39.23895964929771, -2.312561 39.0915455566927, -2.3554993 38.94406076129288, -2.3986816 38.796620256118125, -2.4099426 38.75767469726718, -1.7366028 38.754036048213806)))</str>
+<str name="format">SAFE</str>
+<str name="processingbaseline">03.01</str>
+<str name="platformname">Sentinel-2</str>
+<str name="filename">S2B_MSIL2A_20211126T105309_N0301_R051_T30SWJ_20211126T125946.SAFE</str>
+<str name="instrumentname">Multi-Spectral Instrument</str>
+<str name="instrumentshortname">MSI</str>
+<str name="size">523.61 MB</str>
+<str name="s2datatakeid">GS2B_20211126T105309_024673_N03.01</str>
+<str name="producttype">S2MSI2A</str>
+<str name="platformidentifier">2017-013A</str>
+<str name="orbitdirection">DESCENDING</str>
+<str name="platformserialidentifier">Sentinel-2B</str>
+<str name="processinglevel">Level-2A</str>
+<str name="datastripidentifier">S2B_OPER_MSI_L2A_DS_VGS4_20211126T125946_S20211126T105346_N03.01</str>
+<str name="granuleidentifier">S2B_OPER_MSI_L2A_TL_VGS4_20211126T125946_A024673_T30SWJ_N03.01</str>
+<str name="identifier">S2B_MSIL2A_20211126T105309_N0301_R051_T30SWJ_20211126T125946</str>
+<str name="uuid">e5b95197-2549-4601-ab5e-db7be7ed1ad5</str>
+</entry>
+</feed>

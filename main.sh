@@ -1,5 +1,7 @@
 #!/bin/bash
 
+python main.py
+
 FILENAME="utils/links.csv"
 
 while IFS="," read -r link title ingestion processing_level size uuid downloaded username password

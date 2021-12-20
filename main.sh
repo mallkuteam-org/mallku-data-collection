@@ -12,11 +12,7 @@ do
   echo "processing level: $processing_level"
   echo "size: $size"
   echo "uuid: $uuid"
-<<<<<<< HEAD
   echo "is_downloaded: $is_downloaded"
-=======
-  echo "downloaded: $downloaded"
->>>>>>> e54d75206c37364c59e8b11feeee53d72b2d6b3c
   echo "username: $username"
   echo "password: $password"
   echo ""

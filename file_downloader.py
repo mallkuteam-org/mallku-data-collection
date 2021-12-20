@@ -27,8 +27,7 @@ def main():
     parser.add_argument("-o","--output", help="output filename")
     args = parser.parse_args()
 
-
-    url = args.url + "$value"
+    url = args.url
     user = args.user
     password = args.password
     output_filename = args.url.split('\'')[1]

@@ -17,5 +17,7 @@ do
   echo "password: $password"
   echo ""
 
-  python3 file_downloader.py --url "$link" --user "$username" --password "$password" >> ${PWD}/logs/${title}.log 2>&1 &
+  python3 file_downloader.py --url "$link" --user "$username" --password "$password" &
+  sleep 2 # to avoid query flood
 done < <(tail -n +2 $FILENAME)
+sleep infinity

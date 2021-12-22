@@ -1,11 +1,14 @@
-import requests
+import csv
 import itertools
+
 import pandas as pd
-from domain.User import User
+import requests
+import xmltodict
+
 from domain.Filter import Filter
 from domain.Result import Result
-import xml.etree.ElementTree as ET
-import csv
+from domain.User import User
+from ast import literal_eval
 
 
 def get_links():
@@ -21,20 +24,33 @@ def get_links():
         response = requests.get(
             query,
             auth=requests.auth.HTTPBasicAuth(auth['user'], auth['password']))
-        xml_string = response.text
-        users_iter = itertools.cycle(users)
+        json_response = response.json()
+        results = get_results_from_json(json_response, auth, filter)
 
-        results = get_processed_xml(xml_string)
-        for result,user in zip(results,users_iter):
-            add_row_csv(result,user)
+        users_iter = itertools.cycle(users)
+        for result, user in zip(results, users_iter):
+            add_row_csv(result, user)
 
 
 def build_query(filter):
-    query = 'https://scihub.copernicus.eu/dhus/search?q='
+    limit = filter.limit if filter.limit is not None else 100
+    query = f'https://scihub.copernicus.eu/dhus/search?format=json&start=0&rows={int(limit)}&q='
     if filter.coordinates is not None:
         query += f'footprint:"Intersects{filter.coordinates}"'
     elif filter.polygon is not None:
         query += f'footprint:"Intersects(POLYGON({filter.polygon}))"'
+
+    if filter.begin_position is not None:
+        query += f' AND beginposition:{filter.begin_position}'
+    if filter.end_position is not None:
+        query += f' AND endposition:{filter.end_position}'
+    if filter.product_type is not None:
+        query += f' AND producttype:{filter.product_type}'
+    if filter.cloud_cover_percentage is not None:
+        query += f' AND cloudcoverpercentage:{filter.cloud_cover_percentage}'
+    if filter.order_by is not None:
+        query += f'&orderby={filter.order_by}'
+
     return query
 
 
@@ -51,58 +67,88 @@ def get_filters():
     filters = []
     for index, row in df.iterrows():
         filter = Filter()
-        if row["coords"] is not pd.np.nan:
+        if not isNaN(row["coords"]):
             filter.coordinates = row["coords"]
-        if row["polygon"] is not pd.np.nan:
+        if not isNaN(row["polygon"]):
             filter.polygon = row["polygon"]
+        if not isNaN(row["beginposition"]):
+            filter.begin_position = row["beginposition"]
+        if not isNaN(row["endposition"]):
+            filter.end_position = row["endposition"]
+        if not isNaN(row["producttype"]):
+            filter.product_type = row["producttype"]
+        if not isNaN(row["cloudcoverpercentage"]):
+            filter.cloud_cover_percentage = row["cloudcoverpercentage"]
+        if not isNaN(row["orderby"]):
+            filter.order_by = row["orderby"]
+        if not isNaN(row["limit"]):
+            filter.limit = row["limit"]
+        if not isNaN(row["imagezooms"]):
+            filter.image_zooms = literal_eval(row["imagezooms"])
+        if not isNaN(row["bands"]):
+            filter.bands = literal_eval(row["bands"])
         filters.append(filter)
     return filters
 
 
-def get_processed_xml(xml_string):
+def get_results_from_json(json_file, auth, filter):
     results = []
-    tree = ET.ElementTree(ET.fromstring(xml_string))
-    entries = tree.findall('.//{http://www.w3.org/2005/Atom}entry')
-
+    entries = json_file['feed']['entry']
     for entry in entries:
-        result = Result()
-        entry_string = ET.tostring(entry)
-        entry_tree = ET.ElementTree(ET.fromstring(entry_string))
-        for element in entry_tree.iter():
-            if element.tag == "{http://www.w3.org/2005/Atom}title" and result.title is None:
-                print('-----------------------------')
-                print('title: ', element.text)
-                result.title = element.text
-            if element.tag == "{http://www.w3.org/2005/Atom}link" and result.link is None:
-                print('link: ', element.attrib['href'])
-                result.link = element.attrib['href']
-            if element.attrib == {'name': 'ingestiondate'} and result.ingestion_date is None:
-                print('Ingestion Date: ', element.text)
-                result.ingestion_date = element.text
-            if element.attrib == {'name': 'size'} and result.size is None:
-                print('Size: ', element.text)
-                result.size = element.text
-            if element.attrib == {'name': 'processinglevel'} and result.processing_level is None:
-                print('Processing Level: ', element.text)
-                result.processing_level = element.text
-            if element.attrib == {'name': 'uuid'} and result.uuid is None:
-                print('uuid: ', element.text)
-                result.uuid = element.text
-        results.append(result)
+        manifest_link = f"https://scihub.copernicus.eu/dhus/odata/v1/Products('{entry['id']}')" \
+                   f"/Nodes('{entry['title']}.SAFE')" \
+                   "/Nodes('MTD_MSIL2A.xml')/$value"
+        response = requests.get(
+            manifest_link,
+            auth=requests.auth.HTTPBasicAuth(auth['user'], auth['password']))
+
+        if response.status_code != 200:
+            print(f"Status code {response.status_code} for manifest link = {manifest_link}")
+            continue
+        xml_string = response.text
+        results.extend(get_results_from_xml(xml_string, entry['id'], filter))
+    return results
+
+
+def get_results_from_xml(xml_string, product_id, filter):
+    results = []
+    xml_dict = xmltodict.parse(xml_string)
+    product_uri = xml_dict['n1:Level-2A_User_Product']['n1:General_Info']['Product_Info']['PRODUCT_URI']
+    image_files = xml_dict['n1:Level-2A_User_Product']['n1:General_Info']['Product_Info']['Product_Organisation']['Granule_List']['Granule']['IMAGE_FILE']
+    for file in image_files:
+        file_parts = file.split("/")
+        zoom_and_band = file_parts[4][-7:]
+        zoom = zoom_and_band[-3:]
+        band = zoom_and_band[:3]
+        if filter.image_zooms is not None and zoom not in filter.image_zooms:
+            continue
+        if filter.bands is not None and band not in filter.bands:
+            continue
+        link = f"https://scihub.copernicus.eu/dhus/odata/v1/Products('{product_id}')" \
+               f"/Nodes('{product_uri}')" \
+               f"/Nodes('{file_parts[0]}')" \
+               f"/Nodes('{file_parts[1]}')" \
+               f"/Nodes('{file_parts[2]}')" \
+               f"/Nodes('{file_parts[3]}')" \
+               f"/Nodes('{file_parts[4]}.jp2')" \
+               f"/$value"
+        results.append(Result(link, band, zoom, product_id))
     return results
 
 
 def add_row_csv(result: Result, user):
     with open(r'utils/links.csv', 'a', newline='') as csvfile:
-        fieldnames = ['link', 'title', 'ingestion_date', 'processing_level', 'size', 'uuid', 'is_downloaded','username','password']
+        fieldnames = ['link', 'band', 'zoom', 'uuid', 'is_downloaded', 'username', 'password']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerow({'link': result.link,
-                         'title': result.title,
-                         'ingestion_date': result.ingestion_date,
-                         'processing_level': result.processing_level,
-                         'size': result.size,
+                         'band': result.band,
+                         'zoom': result.zoom,
                          'uuid': result.uuid,
                          'is_downloaded': result.is_downloaded,
                          'username': user.username,
                          'password': user.password
                          })
+
+
+def isNaN(value):
+    return value != value

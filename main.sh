@@ -4,13 +4,11 @@ python3 main.py
 
 FILENAME="utils/links.csv"
 
-while IFS="," read -r link title ingestion processing_level size uuid is_downloaded username password
+while IFS="," read -r link band zoom uuid is_downloaded username password
 do
   echo "link: $link "
-  echo "title: $title"
-  echo "ingestion date: $ingestion"
-  echo "processing level: $processing_level"
-  echo "size: $size"
+  echo "band: $band"
+  echo "zoom: $zoom"
   echo "uuid: $uuid"
   echo "is_downloaded: $is_downloaded"
   echo "username: $username"

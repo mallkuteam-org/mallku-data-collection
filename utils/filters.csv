@@ -1,3 +1,3 @@
-coords,polygon
-"(-31.4166,-64.1833)",
-,"(-4.53 29.85,26.75 29.85,26.75 46.80,-4.53 46.80,-4.53 29.85)"
+coords,polygon,beginposition,endposition,producttype,cloudcoverpercentage,orderby,limit,imagezooms,bands
+,"(-4.53 29.85,26.75 29.85,26.75 46.80,-4.53 46.80,-4.53 29.85)","[2021-11-20T00:00:000Z TO 2022-01-19T00:00:000Z]","[2021-11-20T00:00:000Z TO 2022-01-19T00:00:000Z]","S2MSI2A","[0 TO 10.0]","endposition asc",5,"['20m','10m']","['B03', 'B08', 'TCI']"
+"(-31.4166,-64.1833)",,,,,,,5,,

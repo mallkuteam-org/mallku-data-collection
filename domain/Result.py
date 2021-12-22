@@ -1,9 +1,7 @@
 class Result:
-    def __init__(self):
-        self.link = None
-        self.title = None
-        self.ingestion_date = None
-        self.processing_level = None
-        self.size = None
-        self.uuid = None
+    def __init__(self, link, band, zoom, uuid):
+        self.link = link
+        self.band = band
+        self.zoom = zoom
+        self.uuid = uuid
         self.is_downloaded = False

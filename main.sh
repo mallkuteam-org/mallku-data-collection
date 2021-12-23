@@ -7,7 +7,7 @@ COUNTER=0
 USER_COUNTER=($(wc -l utils/users.csv | awk '{print $1}'))
 USER_COUNTER=$((USER_COUNTER - 1))
 USER_COUNTER=$((USER_COUNTER*3))
-echo "USERS: $USER_COUNTER"
+echo "Max download per users set to: $USER_COUNTER"
 
 while IFS="," read -r link band zoom uuid is_downloaded username password
 do
@@ -26,7 +26,7 @@ do
 
   if [ $COUNTER -gt $USER_COUNTER ]; then
     echo "MAX USER DOWNLOADS REACHED - WAIT TO CONTINUE"
-	  wait
-	fi
+    wait
+  fi
 done < <(tail -n +2 $FILENAME)
 sleep infinity

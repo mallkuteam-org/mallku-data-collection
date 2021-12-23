@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#python3 main.py
+python3 main.py
 
 FILENAME="utils/links.csv"
 COUNTER=0

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir downloads
 python3 main.py
 
 FILENAME="utils/links.csv"
